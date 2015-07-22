@@ -1,0 +1,7 @@
+#!/bin/sh -x
+
+if [ -e /etc/vim/vimrc ]; then
+	cp vimrc /etc/vim/vimrc
+fi
+
+cp perltidyrc /etc/perltidyrc
