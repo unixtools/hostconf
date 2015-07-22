@@ -4,4 +4,9 @@ if [ -e /etc/vim/vimrc ]; then
 	cp vimrc /etc/vim/vimrc
 fi
 
+if [ ! -e /usr/bin/perltidy ]; then
+	if [ -e /usr/bin/apt-get ]; then
+		apt-get -y install perltidy
+	fi
+fi
 cp perltidyrc /etc/perltidyrc
